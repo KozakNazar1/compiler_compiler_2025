@@ -26,7 +26,7 @@
 #include "../../../src/include/config.h"
 #include "../../../src/include/generator/generator.h"
 #include "../../../src/include/lexica/lexica.h"
-//#include "stdio.h"
+#include "stdio.h"
 //#include "stdlib.h"
 //#include "string.h"
 
@@ -37,4 +37,4 @@ extern char parameters[PARAMETERS_COUNT][MAX_PARAMETERS_SIZE];
 
 void comandLineParser(int argc, char* argv[], unsigned long long int* mode, char(*parameters)[MAX_PARAMETERS_SIZE]);
 // after using this function use free(void *) function to release text buffer
-unsigned int loadSource(char** text, char* fileName);
+size_t loadSource(char** text, char* fileName);
